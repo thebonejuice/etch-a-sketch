@@ -3,15 +3,22 @@ containerDiv.classList.add("container");
 
 document.body.appendChild(containerDiv);
 
-for(i = 0; i < 15; i++){
+for(i = 0; i < 60; i++){
     const row = document.createElement("div");
     containerDiv.appendChild(row);
     row.classList.add("row");
-    for(j = 0; j < 15; j++){
+    for(j = 0; j < 60; j++){
         const col = document.createElement("div");
         row.appendChild(col);
         col.classList.add("col");
-        col.textContent= ".";
     }
 }
+
+let elementsArray = document.querySelectorAll(".col");
+
+elementsArray.forEach(function(div){
+    div.addEventListener("mouseover", function(){
+        this.style.backgroundColor="black";
+    });
+});
 

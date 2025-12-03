@@ -10,6 +10,8 @@ html, body{
     align-items: stretch;
     justify-content: space-evenly;
     flex-direction: column;
+    border: solid #000;
+    border-width: 5px;
 }
 
 .row{
@@ -24,6 +26,6 @@ html, body{
     display: flex;
     flex-grow: 1;
     flex-shrink:1;
-    background-color: black;
+    background-color: white;
     color: white;
 }
