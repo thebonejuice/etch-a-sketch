@@ -2,10 +2,15 @@ const title = document.createElement("h1");
 title.textContent="Etch A Sketch! By TheBoneJuice";
 
 const warning = document.createElement("h3");
-warning.textContent="When creating a new grid, please ONLY USE NUMBERS from 1-100.";
+warning.textContent="When creating a new Etch-A-Sketch pad, please ONLY USE NUMBERS from 1-100.";
+
+const context = document.createElement("h4");
+context.textContent="The smaller the number, the bigger the pixels. The bigger the number, the smaller the pixels.";
+
 
 document.body.appendChild(title);
 document.body.appendChild(warning);
+document.body.appendChild(context);
 
 const gridBtn = document.createElement("button");
 gridBtn.textContent="Create a new grid!";
